@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store</title>
+    <style>
+        body {
+            background-color:lavender;
+        }
+    </style>
+</head>
+<body>
+{% for item in items %}
+    <div>
+        <h1>{{ item.name }}</h1>
+        <p>{{ item.type }}</p>
+        <p>{{ item.price}}</p>
+        <img src= {{item.picture.url}} alt="picture of an elemeint in a store" style="width:250px;">
+        <hr>
+    </div>
+{% endfor %}
+</body>
+</html>
