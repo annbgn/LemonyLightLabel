@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lemony Light Label</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <style>
+  body {
+  background-color:lavender;
+  }
+
+  .MenuButtLink {
+  background-color:lightyellow;
+  list-style-type:none;
+
+  padding: 20px;
+  }
+
+  li {
+    float: left;
+    }
+
+    nav {
+      background-color:lightyellow;
+      margin:20px;
+      padding:20px;
+    }
+
+
+</style>
+
+</head>
+<body>
+{% block navigation %}  <!-- TODO highlight current page in navigation bar -->
+<!--
+<div class="container-fluid">
+  <ul>
+    <li class="MenuButtLink"><a href="/app/">Home</a></li>
+    <li class="MenuButtLink"><a href="/app/store/">Store</a></li>
+    <li class="MenuButtLink"><a href="/app/contacts/">Contacts</a></li>
+    <li class="MenuButtLink"><a href="/app/about/">About</a></li>
+  </ul>
+</div>
+-->
+
+<nav>
+    <a href="/app/">Home</a>
+    <a href="/app/store/">Store</a>
+    <a href="/app/contacts/">Contacts</a>
+    <a href="/app/about/">About</a>
+</nav>
+
+<br>
+<br>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+</body>
+</html>
